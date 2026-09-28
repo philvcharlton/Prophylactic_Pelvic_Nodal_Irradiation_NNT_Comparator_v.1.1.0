@@ -1,6 +1,6 @@
 {
-  "name": "Prophylactic Pelvic Nodal Irradiation – NNT Calculator",
-  "short_name": "Pelvic Nodal NNT",
+  "name": "Prophylactic Pelvic Nodal Irradiation – NNT Comparator",
+  "short_name": "NNT Comparator",
   "description": "Trial-based and custom NNT/NNH calculations for pelvic nodal radiotherapy in prostate cancer.",
   "start_url": "./index.html",
   "scope": "./",

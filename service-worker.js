@@ -1,4 +1,4 @@
-const CACHE='pelvic-nodal-nnt-v1.1.0';
+const CACHE='pelvic-nodal-nnt-comparator-v1.3.0';
 const ASSETS=['./','./index.html','./validation.html','./USER_GUIDE.html','./METHODOLOGY_AND_REFERENCES.html','./CLINICAL_DISCLAIMER.html','./manifest.webmanifest','./icons/icon-192.png','./icons/icon-512.png','./icons/apple-touch-icon.png'];
 self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(ASSETS)).then(()=>self.skipWaiting())));
 self.addEventListener('activate',event=>event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key!==CACHE).map(key=>caches.delete(key)))).then(()=>self.clients.claim())));
